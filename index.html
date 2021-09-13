@@ -20,6 +20,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
   }
+  p {margin: auto;}
   .tg  {border-collapse:collapse;border-spacing:0;}
     .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
       overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -81,31 +82,31 @@
         <td class="tg-roq8" colspan="2" rowspan="26">Target</td>
         <td class="tg-r0kw">Arabic</td>
         <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
-        <td class="tg-r0kw"></td>
+        <td class="tg-r0kw"><p class="arm2ara"></p></td>
+        <td class="tg-r0kw"><p class="aze2ara"></p></td>
+        <td class="tg-r0kw"><p class="chi2ara"></p></td>
+        <td class="tg-r0kw"><p class="dut2ara"></p></td>
+        <td class="tg-r0kw"><p class="eng2ara"></p></td>
+        <td class="tg-r0kw"><p class="fin2ara"></p></td>
+        <td class="tg-r0kw"><p class="fre2ara"></p></td>
+        <td class="tg-r0kw"><p class="geo2ara"></p></td>
+        <td class="tg-r0kw"><p class="ger2ara"></p></td>
+        <td class="tg-r0kw"><p class="gre2ara"></p></td>
+        <td class="tg-r0kw"><p class="hin2ara"></p></td>
+        <td class="tg-r0kw"><p class="hun2ara"></p></td>
+        <td class="tg-r0kw"><p class="ita2ara"></p></td>
+        <td class="tg-r0kw"><p class="jap2ara"></p></td>
+        <td class="tg-r0kw"><p class="kor2ara"></p></td>
+        <td class="tg-r0kw"><p class="per2ara"></p></td>
+        <td class="tg-r0kw"><p class="por2ara"></p></td>
+        <td class="tg-r0kw"><p class="rus2ara"></p></td>
+        <td class="tg-r0kw"><p class="sor2ara"></p></td>
+        <td class="tg-r0kw"><p class="spa2ara"></p></td>
+        <td class="tg-r0kw"><p class="taj2ara"></p></td>
+        <td class="tg-r0kw"><p class="tur2ara"></p></td>
+        <td class="tg-r0kw"><p class="ukr2ara"></p></td>
+        <td class="tg-r0kw"><p class="urd2ara"></p></td>
+        <td class="tg-r0kw"><p class="uzb2ara"></p></td>
       </tr>
       <tr>
         <td class="tg-r0kw">Armenian</td>
@@ -838,10 +839,45 @@
 <br>  
 
 <script>
-  $.getJSON("https://www.translated.net/hts/?f=quote&cid=htsdemo&p=htsdemo5&s=english&t=italian&w=100&jt=T&of=json",function(data){
+  $.getJSON("https://www.translated.net/hts/?f=quote&cid=htsdemo&p=htsdemo5&s=arabic&t=armenian&w=100&jt=T&of=json",function(data){
   console.log(data);
-  var eng2ita = data.total;
-  $(".eng2ita").append(eng2ita);
+  var arm2ara = data.total;
+  $(".arm2ara").append(arm2ara);
+  })
+  $.getJSON("https://www.translated.net/hts/?f=quote&cid=htsdemo&p=htsdemo5&s=arabic&t=azerbaijani&w=100&jt=T&of=json",function(data){
+  console.log(data);
+  var aze2ara = data.total;
+  $(".aze2ara").append(aze2ara);
+  })
+  $.getJSON("https://www.translated.net/hts/?f=quote&cid=htsdemo&p=htsdemo5&s=arabic&t=chinese&w=100&jt=T&of=json",function(data){
+  console.log(data);
+  var chi2ara = data.total;
+  $(".chi2ara").append(chi2ara);
+  })
+  $.getJSON("https://www.translated.net/hts/?f=quote&cid=htsdemo&p=htsdemo5&s=arabic&t=dutch&w=100&jt=T&of=json",function(data){
+  console.log(data);
+  var dut2ara = data.total;
+  $(".dut2ara").append(dut2ara);
+  })
+  $.getJSON("https://www.translated.net/hts/?f=quote&cid=htsdemo&p=htsdemo5&s=arabic&t=english&w=100&jt=T&of=json",function(data){
+  console.log(data);
+  var eng2ara = data.total;
+  $(".eng2ara").append(eng2ara);
+  })
+  $.getJSON("https://www.translated.net/hts/?f=quote&cid=htsdemo&p=htsdemo5&s=arabic&t=finnish&w=100&jt=T&of=json",function(data){
+  console.log(data);
+  var fin2ara = data.total;
+  $(".fin2ara").append(fin2ara);
+  })
+  $.getJSON("https://www.translated.net/hts/?f=quote&cid=htsdemo&p=htsdemo5&s=arabic&t=french&w=100&jt=T&of=json",function(data){
+  console.log(data);
+  var fre2ara = data.total;
+  $(".fre2ara").append(fre2ara);
+  })
+  $.getJSON("https://www.translated.net/hts/?f=quote&cid=htsdemo&p=htsdemo5&s=arabic&t=georgian&w=100&jt=T&of=json",function(data){
+  console.log(data);
+  var geo2ara = data.total;
+  $(".geo2ara").append(geo2ara);
   })
 </script>  
 
